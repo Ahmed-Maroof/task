@@ -30,4 +30,20 @@ public class RandomNumberResult {
     public void setMultipliedResult(int multipliedResult) {
         this.multipliedResult = multipliedResult;
     }
+
+    @Override
+    public String toString() {
+        return "RandomNumberResult{" +
+                "id=" + id +
+                ", multipliedResult=" + multipliedResult +
+                '}';
+    }
+
+    public RandomNumberResult(Long id, int multipliedResult) {
+        this.id = id;
+        this.multipliedResult = multipliedResult;
+    }
+
+    public RandomNumberResult() {
+    }
 }
