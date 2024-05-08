@@ -15,6 +15,14 @@ public class RandomNumberResult {
     @Column(name = "multiplied_result")
     private int multipliedResult;
 
+    public RandomNumberResult(Long id, int multipliedResult) {
+        this.id = id;
+        this.multipliedResult = multipliedResult;
+    }
+
+    public RandomNumberResult() {
+    }
+
     public Long getId() {
         return id;
     }
@@ -37,13 +45,5 @@ public class RandomNumberResult {
                 "id=" + id +
                 ", multipliedResult=" + multipliedResult +
                 '}';
-    }
-
-    public RandomNumberResult(Long id, int multipliedResult) {
-        this.id = id;
-        this.multipliedResult = multipliedResult;
-    }
-
-    public RandomNumberResult() {
     }
 }

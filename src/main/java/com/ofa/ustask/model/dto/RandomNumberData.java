@@ -9,6 +9,11 @@ public class RandomNumberData {
     @JsonProperty("randomNumber")
     private int randomNumber;
 
+    public RandomNumberData(Long id, @JsonProperty("randomNumber") int randomNumber) {
+        this.id = id;
+        this.randomNumber = randomNumber;
+    }
+
     public Long getId() {
         return id;
     }
@@ -22,11 +27,6 @@ public class RandomNumberData {
     }
 
     public void setRandomNumber(int randomNumber) {
-        this.randomNumber = randomNumber;
-    }
-
-    public RandomNumberData(Long id, @JsonProperty("randomNumber") int randomNumber) {
-        this.id = id;
         this.randomNumber = randomNumber;
     }
 
